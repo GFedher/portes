@@ -1,0 +1,72 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Alinear contenido al centro */
+}
+
+.container {
+    max-width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    display: inline-block; /* Hacer que el contenedor respete el ancho máximo */
+    text-align: left; /* Alinear el contenido del contenedor a la izquierda */
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+form {
+    width: 30%; /* Utilizar el 30% del ancho disponible */
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Alinear texto de las etiquetas a la izquierda */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    width: 35%; /* Utilizar todo el ancho disponible */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px; /* Espacio entre el contenido y el footer */
+}

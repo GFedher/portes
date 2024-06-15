@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto Mudanza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="logo">Presupuesto Portes</div>
+  </header>
+  <p></p>
+  <p></p>
+  <p></p>
+
+    <form id="presupuestoForm">
+        <div>
+            <label for="nombre">Nombre y telefono del Cliente:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <p></p>
+        </div>
+        <div>
+            <label for="direccionOrigen">Dirección de Origen:</label>
+            <input type="text" id="direccionOrigen" name="direccionOrigen" required>
+            <p></p>
+        </div>
+        <div>
+            <label for="direccionDestino">Dirección de Destino:</label>
+            <input type="text" id="direccionDestino" name="direccionDestino" required>
+            <p></p>
+        </div>
+        <div>
+            <label for="cargaFurgoneta">Carga de Furgoneta:</label>
+            <select id="cargaFurgoneta" name="cargaFurgoneta" required>
+                <option value="minima">Minina (30€)</option>
+                <option value="media">Media Furgoneta (55€)</option>
+                <option value="trescuartos">3/4 de Furgoneta (100€)</option>
+                <option value="completo">Furgoneta Llena (130€)</option>
+            </select>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <div>
+            <label for="operarios">Operarios:</label>
+            <select id="operarios" name="operarios" required>
+                <option value="0">Sin Operario (0€)</option>
+                <option value="1">1 Operario (55€)</option>
+                <option value="2">2 Operarios (110€)</option>
+                <option value="3">3 Operarios (165€)</option>
+            </select>
+        </div>
+
+        <p></p>
+        <p></p>
+        <p></p>
+
+        <div>
+            <label for="distancia">Distancia (km):</label>
+            <input type="number" id="distancia" name="distancia" min="0" required>
+            <p></p>
+        </div>
+        <div>
+            <label for="dificultad">Dificultad:</label>
+            <select id="dificultad" name="dificultad" required>
+                <option value="ninguna">Ninguna (0€)</option>
+                <option value="baja">Baja (12€)</option>
+                <option value="media">Media (25€)</option>
+                <option value="alta">Alta (38€)</option>
+            </select>
+        </div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <button type="submit">Calcular Presupuesto</button>
+        <p></p>
+        <p></p>
+        <p></p>
+    </form>
+
+    <div id="resultado"></div>
+
+    <footer>Hecho por Federico</footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
